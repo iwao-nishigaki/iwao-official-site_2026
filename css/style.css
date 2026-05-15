@@ -1,0 +1,71 @@
+/*全体の設定*/
+:root{
+    --text-color: #eee; /*Jsで操作する可能性もあるためSCSSではなくCSS variableで対応*/
+    --primary-color: #02050e;
+}
+
+
+body * {box-sizing: border-box;}
+
+html,body{
+    height: 100%;
+    font-size: 13px;
+}
+
+@media  screen and (min-width:600px) {
+    html, body {
+        font-size: 16px; /*画面が小さいのときにフォントサイズ変更*/
+    }    
+}
+
+body{
+    background: #000; /*背景色*/
+    color: var(--text-color); /*文字色*/
+    line-height: 2; /*行間*/
+}
+
+a {
+    color: var(--text-color);
+    transition: 0.2s; /*hoverまでの時間*/
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/*ヘッダー*/
+header {
+    display: flex;
+    align-items: center; /*中央揃え*/
+    justify-content: space-between; /*両端揃え*/
+    height: 70px;
+    padding: 1vw,3vw;
+    width: 100%;
+}
+
+
+/*メニューバーの設定*/
+#menubar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menubar li a {
+    border-radius: 100px; /*角を丸く*/
+    padding: 0.2rem 1rem;
+}
+
+#menubar li a:hover {
+    background: #fff;
+}
+
+
+#menubar > nav > ul{
+    display:flex; /*横並び*/
+    gap: 0.5rem;
+}
+
+
