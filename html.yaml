@@ -1,0 +1,10 @@
+name: Pub Github Pages efficiency
+
+#トリガーの設定
+on: 
+ push:
+
+#パーミッションの設定
+permissions:
+ contents: write
+
