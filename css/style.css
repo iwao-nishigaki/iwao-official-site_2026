@@ -68,4 +68,17 @@ header {
     gap: 0.5rem;
 }
 
+/*フッターの設定*/
+#footerlink {
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+	font-size: 0.8rem;	/*文字サイズをbodyのの80%に設定*/
+}
 
+/*メニュー１個あたり*/
+#footerlink li {
+	display: inline-block;	/*横並び*/
+    list-style: none;
+	padding: 0 10px;
+}
